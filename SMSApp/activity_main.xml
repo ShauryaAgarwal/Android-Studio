@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/id_receivedTextPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="Phone #"
+        app:layout_constraintEnd_toEndOf="@+id/id_receivedMessageTitleTextView"
+        app:layout_constraintStart_toStartOf="@+id/id_receivedMessageTitleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/id_receivedMessageTitleTextView" />
+
+    <TextView
+        android:id="@+id/id_receivedTextBody"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Message Body"
+        app:layout_constraintEnd_toEndOf="@+id/id_receivedTextPhoneNumber"
+        app:layout_constraintStart_toStartOf="@+id/id_receivedTextPhoneNumber"
+        app:layout_constraintTop_toBottomOf="@+id/id_receivedTextPhoneNumber" />
+
+    <TextView
+        android:id="@+id/id_receivedMessageTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Received Message"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/id_sendMessageTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Send Message"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_receivedTextBody" />
+
+    <TextView
+        android:id="@+id/id_sendTextPhoneNumTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="Phone #"
+        app:layout_constraintEnd_toEndOf="@+id/id_sendMessageTitleTextView"
+        app:layout_constraintStart_toStartOf="@+id/id_sendMessageTitleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/id_sendMessageTitleTextView" />
+
+    <TextView
+        android:id="@+id/id_sendTextBodyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Message Body"
+        app:layout_constraintEnd_toEndOf="@+id/id_sendTextPhoneNumTextView"
+        app:layout_constraintStart_toStartOf="@+id/id_sendTextPhoneNumTextView"
+        app:layout_constraintTop_toBottomOf="@+id/id_sendTextPhoneNumTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
